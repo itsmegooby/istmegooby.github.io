@@ -22,15 +22,15 @@ title: HackClub WebDevs
 - ### Jekyll
     - In order to install jekyll you need yo install the library for it. In the Ruby programming Language these are called *gems* and you can install them from them command line. You will also need another gem called *bundler* that helps keep track of all the libraries in your project. Run the command to install the jekyll and bundler gems.
     - 
-    ```ruby
+    ```bash
     gem install jekyll bundler
     ```
     - Now create a new Jekyll site at ./myblog.
-    ```ruby
+    ```bash
     jekyll new myblog
     ```
     - Change into your new directory -> `myblog`.You will need to build the site and make it available on a local server.
-    ```ruby
+    ```bash
     bundle exec jekyll serve
     ```
     - Browse to [localhost:4000](http://localhost:4000)
