@@ -1,0 +1,7 @@
+docs_list_title: Site Pages
+docs:
+  - title: Home
+    url: /
+
+  - title: Example Lesson
+    url: example

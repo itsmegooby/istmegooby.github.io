@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <title>{{page.title}}</title>
+</head>
+<body>
+    <div class="">
+        <div class="nav">
+            {% for item in site.data.pages.docs %}
+                <a href="{{item.url}}">{{item.title}}</a>
+            {% endfor %}
+        </div>
+        {{ content }}
+    </div>
+</body>
+</html>
