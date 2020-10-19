@@ -1,0 +1,57 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+{%- if page.refresh -%}
+<meta content="{{ page.refresh }}" http-equiv="refresh">
+{%- endif -%}
+
+<meta property="og:description" content="{{ page.description | default: site.cs50.description }}">
+
+<meta property="og:image" content="{{ page.image | default: site.cs50.image }}">
+
+{%- capture title -%}
+    {%- if page.title -%}
+        {{- page.title -}}
+    {%- endif -%}
+    {%- if site.cs50.title -%}
+        {%- unless site.github and site.cs50.title == site.github.repository_name -%}
+            {%- if page.title %} - {% endif -%}
+            {{- site.cs50.title -}}
+        {%- endunless -%}
+    {%- endif -%}
+{%- endcapture -%}
+
+<meta property="og:title" content="{{ title }}">
+
+{%- assign time = site.time | date: '%s' -%}
+
+<link href="/favicon.ico?{{ time }}" rel="icon">
+
+<!-- http://getbootstrap.com/docs/4.5/getting-started/introduction/ -->
+<script src="/assets/jquery/dist/jquery.min.js?{{ time }}"></script>
+<script src="/assets/popper.js/dist/umd/popper.min.js?{{ time }}"></script>
+<script src="/assets/bootstrap/dist/js/bootstrap.min.js?{{ time }}"></script>
+
+<!-- https://bootstrap-table.com/docs/getting-started/introduction/ -->
+<link href="/assets/bootstrap-table/dist/bootstrap-table.min.css?{{ time }}" rel="stylesheet">
+<script src="/assets/bootstrap-table/dist/bootstrap-table.min.js?{{ time }}"></script>
+<script src="/assets/bootstrap-table/dist/extensions/mobile/bootstrap-table-mobile.min.js?{{ time }}"></script>
+
+<!-- https://fontawesome.com/how-to-use/on-the-web/referencing-icons/basic-use -->
+<link href="/assets/@fortawesome/fontawesome-free/css/all.min.css?{{ time }}" rel="stylesheet">
+
+<!-- https://momentjs.com/, https://momentjs.com/timezone/ -->
+<script src="/assets/moment.min.js?{{ time }}"></script>
+<script src="/assets/moment-timezone-with-data.min.js?{{ time }}"></script>
+<script src="/assets/luxon.min.js?{{ time }}"></script>
+
+{% if site.algolia -%}
+<!-- https://www.algolia.com/doc/guides/building-search-ui/installation/js/ -->
+<script src="/assets/algoliasearchLite.min.js?{{ time }}"></script>
+<script src="/assets/instantsearch.production.min.js?{{ time }}"></script>
+{%- endif %}
+
+<link href="/assets/page.css" rel="stylesheet">
+<script src="/assets/jekyll-theme-cs50.js?{{ time }}"></script>
+
+<title>{{ title }}</title>

@@ -1,7 +1,21 @@
-name: hackClub
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "page"
+
+sass:
+  load_paths:
+    - _sass
+    - _sass/node_modules
+
+plugin:
+  - jekyll-theme-cs50-1.1.0
+
 markdown: kramdown
 
-highlighter: rouge
-kramdown:
-  math_engine: mathjax
-  syntax_highlighter: rouge
+collections:
+  year:
+    output: true
+    permalink: /:path
+    sort_by: day # Integer
