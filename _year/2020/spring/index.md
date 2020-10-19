@@ -2,7 +2,8 @@
 layout: page
 day: 0
 title:  Index
-season: Spring
+sn: Spring
+season: spring
 year: 2020
 ---
 *\#50daysofc++code challenge*

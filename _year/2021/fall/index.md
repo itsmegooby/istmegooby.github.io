@@ -2,7 +2,8 @@
 layout: page
 day: 0
 title:  Index
-season: Fall
+sn: Fall
+season: fall
 year: 2021
 ---
 *\#50daysofc++code challenge*

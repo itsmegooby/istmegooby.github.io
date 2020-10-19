@@ -1,7 +1,8 @@
 ---
 layout: page
 title:  Index
-season: Spring
+sn: Spring
+season: spring
 year: 2020
 ---
 
