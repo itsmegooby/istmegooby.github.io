@@ -5,7 +5,7 @@
     <head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta property="og:description" content="">
 
-<meta property="og:image" content=""><meta property="og:title" content="404"><link href="/favicon.ico?1603139298" rel="icon">
+<meta property="og:image" content=""><meta property="og:title" content="Constants and Keywords"><link href="/favicon.ico?1603139298" rel="icon">
 
 <!-- http://getbootstrap.com/docs/4.5/getting-started/introduction/ -->
 <script src="/assets/jquery/dist/jquery.min.js?1603139298"></script>
@@ -30,13 +30,11 @@
 <link href="/assets/page.css" rel="stylesheet">
 <script src="/assets/jekyll-theme-cs50.js?1603139298"></script>
 
-<title>404</title>
+<title>Constants and Keywords</title>
 </head>
 
     <body>
 
-        
-        <h1 style="color: brown;">404</h1>
         
 
         <div class="container-fluid">
@@ -46,7 +44,8 @@
                     <header>
                         
                         
-                        <h1 data-id="this-is-50-days"><a href="http://localhost:4000">This is HackClub</a></h1>
+                        <h1 data-id="this-is-50-days"><a href="/2020/Spring
+                            ">This is HackClub</a></h1>
                         <p>
                           <a href="http://evelynhone.edu.zm/">50 Days of C++ | Evelyn Hone College</a><br />
                     </header>
@@ -63,7 +62,9 @@
                             
                              
                                 
-                             
+                                    
+                                        <li><a href="/2020/spring/index">Day 0 </a>Index</li>
+                                    
                                 
                              
                                 
@@ -71,11 +72,29 @@
                                 
                              
                                 
-                             
+                                    
+                                        <li><a href="/2020/spring/1">Day 1 </a>Introduction</li>
+                                    
                                 
                              
                                 
                              
+                                
+                                    
+                                        <li><a href="/2020/spring/2">Day 2 </a>Basic Syntax</li>
+                                    
+                                
+                             
+                                
+                                    
+                                        <li><a href="/2020/spring/3">Day 3 </a>Operators in C++</li>
+                                    
+                                
+                             
+                                
+                                    
+                                        <li><a href="/2020/spring/4">Day 5 </a>Constants and Keywords</li>
+                                    
                                 
                             
                         </ul><hr />
@@ -131,7 +150,51 @@
                 </aside>
 
                 <main class="col-md markdown-body">
-                    Seems like you have gotten yourself lost
+                    <p><em>Day 5 of50daysofC++ code challenge</em></p>
+
+<h1 id="constants-and-keywords">Constants and Keywords</h1>
+
+<p>A constant is an element of a program whose value can not be changed at the time of execution and they are called literals. It may be an int, a float or char data type.</p>
+
+<h2 id="using-constants-in-a-program">Using constants in a program</h2>
+
+<p>There are two ways of using constants in C++ program.</p>
+
+<ul>
+  <li>
+    <p>Using <code class="highlighter-rouge">const</code> keyword</p>
+  </li>
+  <li>
+    <p>Using <code class="highlighter-rouge">#define</code> preprocessor.</p>
+  </li>
+</ul>
+
+<h3 id="using-define-preprocessor">Using <code class="highlighter-rouge">#define</code> preprocessor.</h3>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#define variable value
+#define WIDTH 34
+</span></code></pre></div></div>
+
+<h3 id="using-const-keyword">Using <code class="highlighter-rouge">const</code> keyword</h3>
+
+<p>You can use const prefix to declare constants with a specific type.</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">const</span> <span class="n">type</span> <span class="n">variable</span> <span class="o">=</span> <span class="n">value</span><span class="p">;</span>
+<span class="k">const</span> <span class="kt">int</span> <span class="n">WIDTH</span> <span class="o">=</span> <span class="mi">34</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>A keyword is a word whose meaning is already defined by compiler. These keywords cannot be used as variable name.</p>
+
+<p>Some keywords are given below:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. `default`
+2. `float`
+3. `register`
+4. `struct`
+5. `volatile`
+6. `break`
+</code></pre></div></div>
+
 
                 </main>
 
