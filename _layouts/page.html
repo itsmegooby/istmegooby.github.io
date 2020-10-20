@@ -23,7 +23,7 @@
                             {% capture homeurl %}{{ '/' | append: page.year}}{{ '/' | append: page.season}}
                             {% endcapture %}
                         {% else %}
-                        {% assign homeurl = site.baseurl %}
+                        {% capture homeurl %}https://www.hackclub.ml{% endcapture %} 
                         {% endif %}
                         
                         <h1 data-id="this-is-50-days"><a href="{{homeurl}}">This is HackClub</a></h1>
