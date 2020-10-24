@@ -1,14 +1,14 @@
 ---
 layout: page
 day: 0
-title:  Index
+title:  Annoucement 
 sn: Spring
 season: spring
 year: 2020
 ---
 *\#50daysofc++code challenge*
 
-# Announcement
+# Announcement 
 
 We as Evelyn hone college hack club will be hosting an ONLINE 50 DAYS OF CODE CHALLENGE IN C++ on a date to be communicated soon. You are all welcome to join us learn how to code ,regardless of whether you are just getting started with coding or would like to refresh your c++ coding skills.
 
